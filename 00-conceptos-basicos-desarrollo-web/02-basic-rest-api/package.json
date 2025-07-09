@@ -1,0 +1,14 @@
+{
+  "name": "02-basic-rest-api",
+  "version": "1.0.0",
+  "description": "Ejemplo REST API Usando Express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jose Luis Olivares",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
