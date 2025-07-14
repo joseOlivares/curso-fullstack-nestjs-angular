@@ -1,4 +1,4 @@
-let nombre="Escriba su nombre";
+let nombre="JOse";
 let apellidos="Escriba sus apellidos";
 
 console.log(`Hola, ${nombre} ${apellidos} Bienvenido a TypeScript!`);
