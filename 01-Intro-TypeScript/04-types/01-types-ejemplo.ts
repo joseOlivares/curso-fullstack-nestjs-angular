@@ -9,7 +9,7 @@ let miID: ID = '123';
 let miCoordenada: Coordenada = { x: 10, y: 20 };
 let miEstado: Estado = 'activo';
 
-
+//TODO: Crear otras variables con los tipos definidos
 
 
 
