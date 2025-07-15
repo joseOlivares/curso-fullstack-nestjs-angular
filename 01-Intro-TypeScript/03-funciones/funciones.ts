@@ -7,7 +7,7 @@
  console.log(sumar(1, 2));
 
 
- /* Función con parametros opcionales */
+ /* Función con parametros opcionales usando ? */
  function sumar2(a: number, b: number, c?:number): number {
    if(c) return a+b+c;
 
