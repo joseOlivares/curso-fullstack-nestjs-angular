@@ -20,3 +20,5 @@
     console.log(usuario.nombreCompleto()); // "Luis Olivares"
     console.log(usuario.telefono); // "123456789"
     console.log(usuario.email); // "luis.olivares@gbm.com"
+
+    export {Usuario}
