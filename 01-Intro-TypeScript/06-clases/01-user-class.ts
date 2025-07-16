@@ -18,7 +18,8 @@
         }
     }
 
-
+    // Ejemplo de uso de la clase Usuario
+    
     let usuario: Usuario = new Usuario("Jose", "Olivares", "jose.olivares@gbm.com");
     usuario.telefono = "987654321"; // Asignación de un valor a la propiedad opcional
     console.log(usuario.nombreCompleto()); // "Jose Olivares"
