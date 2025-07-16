@@ -43,7 +43,7 @@ exampleTodo.forEach(todo => {
 
 // Ejemplo de cómo podrías usar la interfaz para hacer una solicitud HTTP
 // (Asegúrate de tener un entorno que soporte fetch, como un navegador o Node.js con node-fetch)
-// Ejecutar con ts-node si estás usando TypeScript: // ts-node 03-todo-response-interface.ts
+// Ejecutar con ts-node si estás usando TypeScript: ts-node 03-todo-response-interface.ts
 
 
 /* 
@@ -79,3 +79,6 @@ try {
     }
 }
 */
+
+
+//Info adicional: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
