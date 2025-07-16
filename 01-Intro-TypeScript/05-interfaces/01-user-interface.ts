@@ -5,6 +5,8 @@
         email: string;
         telefono?: string; // Propiedad opcional
         nombreCompleto(): string; // Método
+        //TypeScript no permite implementar métodos directamente en una interfaz. 
+        // Las interfaces solo pueden definir la estructura de un objeto, pero no pueden contener implementaciones.
     }
 
     let usuario: Usuario = {
