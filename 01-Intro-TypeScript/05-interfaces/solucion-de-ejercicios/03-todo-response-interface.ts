@@ -48,13 +48,13 @@ exampleTodo.forEach(todo => {
 
 /* 
 fetch('https://jsonplaceholder.typicode.com/todos')
-    .then(response => response.json())
-    .then((data: TodoResponse[]) => {
-        data.forEach(todo => {
+    .then(response => response.json()) // Convertir la respuesta a JSON
+    .then((data: TodoResponse[]) => { // Validar que la respuesta cumple con la interfaz TodoResponse
+        data.forEach(todo => { // Iterar sobre cada todo
             console.log(`ID: ${todo.id}, Title: ${todo.title}, Completed: ${todo.completed}`);
         });
     })
-    .catch(error => console.error('Error fetching todos:', error)); 
-*/
+    .catch(error => console.error('Error fetching todos:', error));  // Manejo de errores en caso de fallo en la solicitud
 
+*/
 
