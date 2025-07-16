@@ -58,3 +58,24 @@ fetch('https://jsonplaceholder.typicode.com/todos')
 
 */
 
+
+// Ejemplo de uso de la interfaz TodoResponse con una solicitud asíncrona
+/*
+fetchTodos();
+
+async function fetchTodos() {   
+try {
+        const response = await fetch('https://jsonplaceholder.typicode.com/todos');
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        const data: TodoResponse[] = await response.json(); // Validar que la respuesta cumple con la interfaz TodoResponse
+      
+        data.forEach(todo => { // Iterar sobre cada todo
+            console.log(`ID: ${todo.id}, Title: ${todo.title}, Completed: ${todo.completed}`);
+        }); 
+    } catch (error) {
+        console.error('Error fetching todos:', error); // Manejo de errores en caso de fallo en la solicitud        
+    }
+}
+*/
