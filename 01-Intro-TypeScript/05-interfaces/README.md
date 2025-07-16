@@ -13,3 +13,9 @@ tsc --build tsconfig.json
 ```bash
 tsc --watch
 ```
+
+## Ejecutar archivo TypeScript directamente
+# Se necesita tener instalado ts-node
+```bash
+ts-node archivo.ts
+```
