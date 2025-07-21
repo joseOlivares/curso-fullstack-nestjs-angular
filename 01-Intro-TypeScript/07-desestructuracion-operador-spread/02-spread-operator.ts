@@ -37,5 +37,13 @@
     console.log(` copyColors: ${copyColors}`); // [ 'Morado', 'verde', 'azul' ]);
     console.log(` colors: ${colors}`);  // [ 'Morado', 'verde', 'azul' ]
     
-
-
+    // En JavaScript los tipos primitivos se pasar por valor
+    // Objetos, arreglos y funciones se pasan por referencia
+    /*
+        let a=[4,8,7];
+        let b=a;
+        //let b=[...numeros];
+        b.push(3);
+        console.log(`a = ${a}`)
+        console.log(`b= ${b}`)
+    */
