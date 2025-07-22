@@ -1,0 +1,12 @@
+{
+  "folders": [
+    {
+      "path": ".",
+      "name": "curso-fullstack-nestjs-angular"
+    },
+    {
+      "path": "./03-Nestjs/03-01-primer-proyecto",
+      "name": "03-01-primer-proyecto"
+    }
+  ]
+}
