@@ -1,7 +1,8 @@
 import { Module } from '@nestjs/common';
+import { GreetingsController } from './greeting.controller';
 
 @Module({
-  controllers: [],
+  controllers: [GreetingsController],
   providers: [],
   exports: [],
 })
