@@ -3,6 +3,7 @@ import { GreetingsService } from './greetings.service';
 
 @Controller('greetings')
 export class GreetingsController {
+  //inyectamos el servicio
   constructor(private greetingsService: GreetingsService) {}
   @Get()
   getGretting(): string {
@@ -15,7 +16,7 @@ export class GreetingsController {
   }
 
   //con multiples parámetros en el body
-  @Post('/full-name')
+  @Post('/full-name') // http://localhost:3000/greetings/full-name
   postGretting2(@Body() body: { name: string; sureName?: string }): string {
     return this.greetingsService.sayHelloWithFullName(body.name, body.sureName);
   }
