@@ -1,21 +1,23 @@
 import { Controller, Get, Post, Body } from '@nestjs/common';
+import { GreetingsService } from './greetings.service';
 
 @Controller('greetings')
 export class GreetingsController {
-  constructor() {}
+  //inyectamos el servicio
+  constructor(private greetingsService: GreetingsService) {}
   @Get()
   getGretting(): string {
-    return 'Hello this is the Greetings Controller!';
+    return this.greetingsService.sayHello();
   }
 
   @Post()
   postGretting(@Body() body: { name: string }): string {
-    return `Hello ${body.name}!`;
+    return this.greetingsService.sayHelloWithName(body.name);
   }
 
   //con multiples parámetros en el body
-  // @Post()
-  // postGretting2(@Body() body: { name: string; sureName?: string }): string {
-  //   return `Hello ${body.name} ${body.sureName ?? ''}!`;
-  // }
+  @Post('/full-name') // http://localhost:3000/greetings/full-name
+  postGretting2(@Body() body: { name: string; sureName?: string }): string {
+    return this.greetingsService.sayHelloWithFullName(body.name, body.sureName);
+  }
 }
